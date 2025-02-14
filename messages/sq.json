@@ -1,0 +1,18 @@
+{
+    "General": {
+    "sort": "Rendit",
+    "products": "produkte",
+    "select_option": "Zgjidh Opsionin"
+
+    },
+    "Step1": {
+      "title": "Step 1 Title",
+      "EXPLANATION_PARAGRAPH1": "lorem ipsum"
+    },
+    "Step2": {
+      "title": "Step 2 Title",
+      "EXPLANATION_PARAGRAPH1": "lorem ipsum",
+      "EXPLANATION_PARAGRAPH2": "lorem ipsum",
+      "EXPLANATION_PARAGRAPH3": "lorem ipsum"
+    }
+  }
