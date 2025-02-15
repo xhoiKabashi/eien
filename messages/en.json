@@ -2,16 +2,21 @@
   "General": {
     "sort": "Sort by",
     "products": "productsssss",
-    "select_option": "Select Option"
-  },
-    "Step1": {
-      "title": "Step 1 Title",
-      "EXPLANATION_PARAGRAPH1": "lorem ipsum"
-    },
-    "Step2": {
-      "title": "Step 2 Title",
-      "EXPLANATION_PARAGRAPH1": "lorem ipsum",
-      "EXPLANATION_PARAGRAPH2": "lorem ipsum",
-      "EXPLANATION_PARAGRAPH3": "lorem ipsum"
-    }
+    "select_option": "Select Option",
+    "all_products": "All products",
+    "in_stock_only": "In stock only",
+    "genuine_leather": "Genuine Leather",
+    "full_grain": "Full Grain Leather",
+    "red": "Red",
+    "black": "Black",
+    "clear_all": "Clear All",
+    "card_holder": "Card Holder",
+    "wallet": "Wallet",
+    "color": "Color",
+    "all_colors": "All Colors",
+    "product_type": "Product Type",
+    "availability": "Availability",
+    "material": "Material"
+
   }
+}

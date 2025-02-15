@@ -45,7 +45,7 @@ export const Navbar = () => {
             />
           </div>
           <div className="absolute left-1/2 transform -translate-x-1/2 text-base font-thin italic text-slate-900 tracking-widest">
-            <p className="md:text-2xl">eien handmade</p>
+            <p className="md:text-2xl  capitalize">eien handmade</p>
           </div>
           <div className="flex items-center space-x-4 md:space-x-8">
             <motion.button

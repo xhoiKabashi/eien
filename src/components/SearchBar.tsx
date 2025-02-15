@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Search, X } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { useState } from "react";
+import { Search, X } from "lucide-react";
+import { motion } from "framer-motion";
+import { useSearch } from "@/context/SearchContext";
 
 interface SearchBarProps {
   onSearch?: (query: string) => void;
@@ -8,13 +9,13 @@ interface SearchBarProps {
   placeholder?: string;
 }
 
-export  const SearchBar = ({
+export const SearchBar = ({
   onSearch = () => {},
   onClose = () => {},
-  placeholder = "Search products..."
+  placeholder = "Search products...",
 }: SearchBarProps) => {
-  const [query, setQuery] = useState('');
   const [isFocused, setIsFocused] = useState(false);
+  const { query, setQuery } = useSearch();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

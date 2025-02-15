@@ -2,17 +2,24 @@
     "General": {
     "sort": "Rendit",
     "products": "produkte",
-    "select_option": "Zgjidh Opsionin"
+    "select_option": "Zgjidh Opsionin",
+    "all_products": "Te gjitha produktet",
+    "in_stock_only": "Ne gjendje",
+    "genuine_leather": "Lekure Genuine",
+    "full_grain": "Lekure Full Grain",
+    "red": "E Kuqe",
+    "black": "E Zeze",
+    "clear_all": "Fshi Filtrat",
+    "card_holder": "Mbajtese Kartash",
+    "wallet": "Portofol",
+    "color": "Ngjyra",
+    "all_colors": "Te gjitha",
+    "product_type": "Lloji i produktit",
+    "availability": "Gjendja",
+    "material": "Materiali"
 
-    },
-    "Step1": {
-      "title": "Step 1 Title",
-      "EXPLANATION_PARAGRAPH1": "lorem ipsum"
-    },
-    "Step2": {
-      "title": "Step 2 Title",
-      "EXPLANATION_PARAGRAPH1": "lorem ipsum",
-      "EXPLANATION_PARAGRAPH2": "lorem ipsum",
-      "EXPLANATION_PARAGRAPH3": "lorem ipsum"
-    }
+
+
+  }
+    
   }
