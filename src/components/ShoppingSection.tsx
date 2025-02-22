@@ -4,6 +4,7 @@ import { useState } from "react";
 import Filters from "./ui/Filters";
 import Card from "./Card";
 import Chips from "./Chips";
+import { FilterDrawer } from "./ui/FilterDrawer";
 
 const products = [
   {
@@ -113,6 +114,7 @@ export const ShoppingSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("all_products");
   const [selectedColor, setSelectedColor] = useState("all_colors");
   const [selectedMaterial, setSelectedMaterial] = useState("all_materials");
+  const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false);
 
   const handleLayoutChange = (layout: string) => {
     setGridLayout(layout);
@@ -152,6 +154,9 @@ export const ShoppingSection = () => {
         return "md:grid-cols-3";
     }
   };
+  const handleFilterClick = () => {
+    setIsFilterDrawerOpen(!isFilterDrawerOpen);
+  };
 
   // Apply filters
   const filteredProducts = products.filter((product) => {
@@ -187,9 +192,22 @@ export const ShoppingSection = () => {
         onLayoutChange={handleLayoutChange}
         onSortChange={handleSortChange}
         sortOption={sortOption}
+        onFilterClick={handleFilterClick}
       />
       <div className=" w-full flex">
-        <div className=" hidden">
+      <FilterDrawer isOpen={isFilterDrawerOpen} onClose={() => setIsFilterDrawerOpen(false)}>
+          <Filters
+            inStockOnly={inStockOnly}
+            selectedCategory={selectedCategory}
+            selectedColor={selectedColor}
+            selectedMaterial={selectedMaterial}
+            onInStockChange={handleInStockChange}
+            onCategoryChange={handleCategoryChange}
+            onColorChange={handleColorChange}
+            onMaterialChange={handleMaterialChange}
+          />
+        </FilterDrawer>
+        <div className=" hidden md:block">
           <Filters
             inStockOnly={inStockOnly}
             selectedCategory={selectedCategory}

@@ -33,7 +33,7 @@ export const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className="flex flex-col justify-around items-center py-5 px-4 md:py-6 md:px-14 w-full fixed bg-white z-50">
+      <nav className="flex flex-col justify-around items-center py-5 px-4    w-full fixed bg-white z-50">
         <div className="flex w-full items-center justify-between relative">
           <div className="flex items-center space-x-6">
             <Image
